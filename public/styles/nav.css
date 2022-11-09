@@ -4,6 +4,7 @@
   background-color: #4056A1;
   font-family: "Bungee", sans-serif;
   color: #FFFFFF;
+  font-size: 2em;
   padding: 1.5em;
 
   position: fixed;
@@ -12,7 +13,7 @@
 
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
 }
 
 .navbar-post {
@@ -20,4 +21,8 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+.navbar-post span {
+font-size: 0.5em;
+
 }

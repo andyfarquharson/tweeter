@@ -17,11 +17,11 @@ html {
 
 body {
   color: #545149;
-  background-color: #f4f1ec;
+  background-color: #eab96b;
   background-image: url('../images/sandpaper.png');
   font-family: "Source Sans Pro", sans-serif;
   font-weight: 300;
-  font-size: 24px;
+  font-size: 1em;
 }
 
 .container {
