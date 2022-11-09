@@ -21,6 +21,7 @@ article.tweet header {
   flex-direction: row;
   height: fit-content;
 }
+
 article.tweet p {
   display: flex;
   justify-content: flex-start;
@@ -36,4 +37,12 @@ article.tweet footer {
   align-items: flex-start;
   flex-direction: row;
 
+}
+
+article.tweet:hover {
+  box-shadow: 1em 1em #545149;
+
+}
+article.tweet footer i:hover {
+  color: #f59f14;
 }
