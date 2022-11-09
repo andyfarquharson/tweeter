@@ -15,7 +15,7 @@ $( "#tweet-text" ).on('input', function() {
   if (char < 0) {
     counter.css('color', 'red');
     } else {
-      counter.css('color', 'black')
+      counter.css('color', 'black');
     }
   
 

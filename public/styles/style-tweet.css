@@ -1,0 +1,39 @@
+#tweet-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+article.tweet {
+  display: flex;
+  justify-content: column;
+  flex-direction: column;
+  border: solid #545149;
+  height: fit-content;
+
+}
+
+article.tweet header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  align-content: center;
+  flex-direction: row;
+  height: fit-content;
+}
+article.tweet p {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 1.5em;
+
+}
+article.tweet footer {
+  border-top: solid #545149;
+  margin: 2em;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-direction: row;
+
+}
