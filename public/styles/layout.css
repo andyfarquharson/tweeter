@@ -18,10 +18,21 @@ html {
 body {
   color: #545149;
   background-color: #f4f1ec;
+  background-image: url('../images/sandpaper.png');
   font-family: "Source Sans Pro", sans-serif;
   font-weight: 300;
   font-size: 24px;
 }
+
+.container {
+  width: 90%;
+  margin: 5%;
+  justify-content: center;
+  align-items: center;
+  background-color: #f4f1ec;
+
+}
+
 
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions

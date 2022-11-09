@@ -8,3 +8,6 @@ header {
   align-items: center;
   flex-direction: column;
 }
+i {
+  color: #FF0000;
+}

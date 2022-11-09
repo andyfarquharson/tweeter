@@ -1,0 +1,38 @@
+.new-tweet {
+
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-direction: column;
+  align-items: stretch;
+}
+.new-tweet-top {
+
+  width: 100%;
+  display: flex;
+  justify-content: flex start;
+  align-items: center;
+  border-bottom: solid #545149;
+}
+.new-tweet-top textarea {
+  height: 40px;
+  background-color: transparent;
+  display: flex;
+  align-items: stretch;
+  resize: none;
+  border: none;
+
+}
+.new-tweet-bottom {
+
+  display:flex;
+  justify-content: space-between;
+  font-family: "Bungee";
+  margin: 5px;
+  width: 100%;
+
+}
+.new-tweet-bottom button {
+  color: #FFFFFF;
+  background-color: #4056A1;
+}
