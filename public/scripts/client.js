@@ -3,17 +3,26 @@
  * jQuery is already loaded
  * Reminder: Use (and do all your DOM work in) jQuery's document ready function
  */
+// Evade function for safe user input
+const evade = function (str) {
+  let div = document.createElement("div");
+  div.appendChild(document.createTextNode(str));
+  return div.innerHTML;
+};
 
+// This function lays out our tweets
 const createTweetElement = data => {
   let $tweet = (`<article class="tweet">
   <header>
-  <div>${data.user.name}</div>
-  <div>${data.user.avatars}</div>
-  <div>${data.user.handle}</div>
+  <div class='user'>
+    <img src="${evade(data.user.avatars)}">
+  <p>${evade(data.user.name)}</p>    
+  </div>
+  <div id='handle'>${evade(data.user.handle)}</div>
   </header>
-  <p>${data.content.text}</p>
+  <p id='tweet'>${evade(data.content.text)}</p>
   <footer>
-  <div>${timeago.format(data.created_at)}</div>
+  <div>${evade(timeago.format(data.created_at))}</div>
   <ul>
   <i class="fa-solid fa-flag"></i>
   <i class="fa-solid fa-retweet"></i>
@@ -24,13 +33,12 @@ const createTweetElement = data => {
   `);
   return $tweet;
 };
-
+// Grabs tweets from /tweets
 const renderTweets = data => {
   $('#tweet-container').empty();
   for (let tweet of data) {
     $('#tweet-container').prepend(createTweetElement(tweet));
   }
-  return;
 };
 
 // console.log(renderTweets(tweetData));
@@ -43,25 +51,33 @@ const loadTweets = () => {
     });
 };
 
-loadTweets();
-console.log(loadTweets());
-//
+// Posts the tweet with the submit button
 const submitTweet = event => {
-  console.log("Hello from the submit form!");
   event.preventDefault();
   
+  if(!$('textarea').val()) {
+    return $('.error-alert').text("Uh Oh: You gotta be humming about something!").slideDown();
+  }
+  if ($('textarea').val().length > 140) {
+    return $('.error-alert').text("Uh Oh: Looks like someones a bit of a humming bird!").slideDown();
+  } 
+  console.log('Your tweets are being posted');
   $.ajax('/tweets', {
     method: 'POST',
-    data: $(this).serialize()
-  });
+    data: $('textarea').serialize(),
+  })
+    .then(() => {
+    loadTweets();
+  })
+
+  $('textarea').val('');
+  $('.counter').text(140)
   
 };
+loadTweets();
 
 $(document).ready(function() {
   console.log("Hello TWEETER!")
   
-  // const $tweet = createTweetElement(tweetData);
-  // console.log($tweet);
-  // $('#tweet-container').append($tweet);
-  // (renderTweets(tweetData));
+  $('form.tweet-submit').on('submit', submitTweet);
 });

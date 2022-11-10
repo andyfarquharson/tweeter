@@ -1,7 +1,6 @@
 #tweet-container {
 
   display: flex;
-  justify-content: center;
   flex-direction: column;
 }
 
@@ -10,19 +9,27 @@ article.tweet {
   border: solid #545149;
   
   display: flex;
-  justify-content: column;
+  justify-content: center;
   flex-direction: column;
 
 }
 
 article.tweet header {
-  height: fit-content;
+  margin: 1em;
+  width: inherit;
+  height: inherit;
+  font-weight: 600;
   
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
   align-content: center;
+  align-items: center;
   flex-direction: row;
+}
+
+div.user {
+  display: flex;
+  flex-direction: row
 }
 
 article.tweet p {
@@ -31,6 +38,7 @@ article.tweet p {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+
 
 }
 article.tweet footer {
@@ -41,9 +49,11 @@ article.tweet footer {
   display: flex;
   justify-content: space-between;
   align-content: center;
+  align-items: center;
   flex-direction: row;
 }
 article.tweet footer i {
+  margin: 5px;
   color:#4056A1;
 }
 

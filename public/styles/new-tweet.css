@@ -1,21 +1,26 @@
 .new-tweet {
-
   display: flex;
   justify-content: center;
-  align-items: stretch;
   flex-direction: column;
-  align-items: stretch;
 }
-.new-tweet-top {
 
+.new-tweet-top {
   width: 100%;
   display: flex;
-  justify-content: flex start;
-  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: flex-start;
   border-bottom: solid #545149;
+}
+
+.new-tweet-top label {
+  margin: 0.5em;
+  font-size: 24px;
+  font-weight: 600;
 }
 .new-tweet-top textarea {
   height: 40px;
+  width: 100%;
   background-color: transparent;
   display: flex;
   align-items: stretch;
@@ -24,15 +29,32 @@
 
 }
 .new-tweet-bottom {
-
   display:flex;
   justify-content: space-between;
   font-family: "Bungee";
   margin: 5px;
-  width: 100%;
+  width: inherit;
 
 }
 .new-tweet-bottom button {
   color: #FFFFFF;
   background-color: #4056A1;
+}
+
+.error-alert {
+  border: red;
+  background: transparent;
+  width: 90%;
+  height: fit-content;
+  color: red;
+  font-family: "Source Sans Pro";
+  font-weight: 600;
+  font-size: 28px;
+  margin: auto 20px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  display: none;
+
 }

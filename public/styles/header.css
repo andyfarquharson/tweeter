@@ -1,13 +1,14 @@
 header {
-  height: 640px;
+  margin-top: 140px;
   width: 100%;
 
 
   display:flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   flex-direction: column;
 }
+
 i {
   color: #FF0000;
 }
