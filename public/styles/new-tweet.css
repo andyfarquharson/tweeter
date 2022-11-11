@@ -42,7 +42,7 @@
 }
 
 .error-alert {
-  border: red;
+  border: solid 5px red;
   background: transparent;
   width: 90%;
   height: fit-content;
