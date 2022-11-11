@@ -9,12 +9,9 @@ html {
 *, *:before, *:after {
   box-sizing: inherit;
 }
-
 /*
  * Global layout stuff
  */
-
-
 body {
   color: #545149;
   background-color: #eab96b;
@@ -27,13 +24,18 @@ body {
 .container {
   width: 90%;
   margin: 5%;
+  
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
+  align-content: center;
   align-items: center;
   background-color: #f4f1ec;
-
 }
-
-@media only screen and (min-width: 1024px) {
+/*
+ * Additional CSS can be defined below or in other CSS files, as per instructions
+ */
+@media only screen and (min-width: 915px) {
   body {
     display: flex;
     flex-direction: row;
@@ -41,9 +43,7 @@ body {
   .container {
     margin-top: 120px;
   }
-  .
+  nav.navbar-top {
+    background-color: #4056A1;
+  }
 }
-
-/*
- * Additional CSS can be defined below or in other CSS files, as per instructions
- */

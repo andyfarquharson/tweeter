@@ -1,5 +1,4 @@
 #tweet-container {
-
   display: flex;
   flex-direction: column;
 }
@@ -11,7 +10,6 @@ article.tweet {
   display: flex;
   justify-content: center;
   flex-direction: column;
-
 }
 
 article.tweet header {
@@ -38,13 +36,11 @@ article.tweet p {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-
-
 }
+
 article.tweet footer {
   margin: 2em;
-  border-top: solid #545149;
-  
+  border-top: solid #545149;  
   
   display: flex;
   justify-content: space-between;
@@ -52,6 +48,7 @@ article.tweet footer {
   align-items: center;
   flex-direction: row;
 }
+
 article.tweet footer i {
   margin: 5px;
   color:#4056A1;
@@ -59,8 +56,8 @@ article.tweet footer i {
 
 article.tweet:hover {
   box-shadow: 1em 1em #545149;
-
 }
+
 article.tweet footer i:hover {
   color: rgb(186, 137, 12);
 }

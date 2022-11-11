@@ -2,6 +2,7 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
+  width: inherit;
 }
 
 .new-tweet-top {
@@ -18,29 +19,33 @@
   font-size: 24px;
   font-weight: 600;
 }
+/* Text box */
 .new-tweet-top textarea {
   height: 40px;
   width: 100%;
   background-color: transparent;
+  
   display: flex;
   align-items: stretch;
   resize: none;
   border: none;
 
 }
+
 .new-tweet-bottom {
   display:flex;
   justify-content: space-between;
+  
   font-family: "Bungee";
   margin: 5px;
   width: inherit;
-
 }
+/* Tweeet button */
 .new-tweet-bottom button {
   color: #FFFFFF;
   background-color: #4056A1;
 }
-
+/* Error text */
 .error-alert {
   border: solid 5px red;
   background: transparent;
@@ -52,9 +57,9 @@
   font-size: 28px;
   margin: auto 20px;
   text-align: center;
+  
   display: flex;
   justify-content: center;
   flex-direction: column;
   display: none;
-
 }
