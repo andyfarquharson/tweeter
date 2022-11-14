@@ -15,7 +15,7 @@ npm run local
 ```
 4. Head on over to your local port and get humming!
 
-### Screenshots
+## Screenshots
 
 ![Full view of a tweeter page on a larger screen](https://github.com/andyfarquharson/tweeter/blob/master/docs/responsive-design-large.png?raw=true)
  <b>Full view of a tweeter page on a larger screen</b>
@@ -33,7 +33,7 @@ npm run local
 | <b>Screenshot of error message when you try to tweet without typing anything</b> |
 
 
-#### Dependencies
+## Dependencies
 
 - Express
 - Node 5.10.x or above
