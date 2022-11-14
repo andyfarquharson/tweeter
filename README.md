@@ -6,7 +6,7 @@ Tweeter is a simple, single-page Twitter clone that uses HTML, CSS, JS, jQuery a
 ## Screenshots
 
 ![Full view of a tweeter page on a larger screen](https://github.com/andyfarquharson/tweeter/blob/master/docs/responsive-design-large.png?raw=true)
-
+Full view of a tweeter page on a larger screen
 ![Full view of a tweeter page on a smaller screen](https://github.com/andyfarquharson/tweeter/blob/master/docs/responsive-design-small.png?raw=true)
 
 ![Showing off some of the hover css attributes](https://github.com/andyfarquharson/tweeter/blob/master/docs/hover-functions.png?raw=true)
