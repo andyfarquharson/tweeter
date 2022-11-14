@@ -4,8 +4,9 @@
 }
 
 article.tweet {
-  height: fit-content;
+  height: 300px;
   border: solid #545149;
+  margin: 1em;
   
   display: flex;
   justify-content: center;

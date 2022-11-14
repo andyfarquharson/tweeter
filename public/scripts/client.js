@@ -54,8 +54,9 @@ const loadTweets = () => {
 };
 
 // Posts the tweet with the submit button
-const submitTweet = event => {
+const submitTweet = function(event) {
   event.preventDefault();
+  $('.error-alert').text('').slideUp();
   
   if (!$('textarea').val()) {
     return $('.error-alert').text("Uh Oh: You gotta be humming about something!").slideDown();
@@ -71,9 +72,8 @@ const submitTweet = event => {
     .then(() => {
       loadTweets();
     });
-
-  $('textarea').val('');
-  $('.counter').text(140);
+    $('textarea').val('');
+    $('.counter').text(140);
 };
 
 // Loads initial tweets
